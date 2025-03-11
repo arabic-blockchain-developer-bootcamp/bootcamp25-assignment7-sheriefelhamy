@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
 import {Test} from "forge-std/Test.sol";
@@ -9,7 +9,7 @@ contract Assignment7Test is Test {
 
     function setUp() public {
         // pass your token name and symbol here
-        assignment = new Assignment7();
+        assignment = new Assignment7( "SheriefToken", "SHT");
     }
 
     function testMintAndTransfer() public {
